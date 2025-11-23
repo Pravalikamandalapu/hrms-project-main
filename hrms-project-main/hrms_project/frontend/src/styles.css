@@ -1,0 +1,4 @@
+body{font-family: Arial, sans-serif;padding:20px}
+input, button, select { padding:8px;margin:6px 0 }
+.nav { margin-bottom:20px }
+.card { border:1px solid #ddd;padding:12px;border-radius:6px;margin-bottom:12px }

@@ -1,0 +1,12 @@
+const express = require('express');
+const router = express.Router();
+const { authMiddleware } = require('../middlewares/authMiddleware');
+const controller = require('../controllers/teamController');
+router.use(authMiddleware);
+router.get('/', controller.list);
+router.post('/', controller.create);
+router.put('/:id', controller.update);
+router.delete('/:id', controller.remove);
+router.post('/:teamId/assign', controller.assign);
+router.post('/:teamId/unassign', controller.unassign);
+module.exports = router;

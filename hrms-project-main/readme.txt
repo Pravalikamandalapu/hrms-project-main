@@ -1,0 +1,1 @@
+HRMS Project placeholder. Full project structure will be generated here.
